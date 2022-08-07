@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root{
+    --ff-primary:"nunito", helvetica, arial, sans-serif;
+    --crl-white:#F5F5F5;
+    --crl-navyBlue:#191919;
+}
+
+
+/* 1.Estilos gerais*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+a, a:hover, a:active, a:link, a:visited{
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: var(--ff-primary);
+    
+}
+
+hr{
+    border: none;
+    background-color:var(--crl-navyBlue);
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
+}
+
+p{
+    line-height: 21.82px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.section_titulo{
+    font-size: 3rem;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0 auto;
+
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/*2.menu*/
+
+.menu-bg{
+    background-color: #191919;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.menu_logo {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.nav_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_link{
+    padding: 20px ;
+    color: var(--crl-white);
+}
+
+
+/*3.Header*/
+
+.intro{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+/*4.quem somos*/
+
+.somos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.somos-c{
+    display: flex;/*todos os elementos dentro do .somos-c vão ficar lado a lado com display:flex;*/
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.somos-c_texto{
+    flex: 6 1 160px;
+}
+
+.somos-c_img{
+    flex: 1 1 350px;
+}
+
+/*5.servicos*/
+
+.servicos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.servicos-c{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.servicos-c_texto{
+    flex: 6 1 160px;
+}
+
+.servicos-c_img{
+    flex: 1 1 350px;
+}
+
+/*6.exemplos*/
+.exemplos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.exemplos-c{
+    display: flex; /* deixa os elementos um do lado do outro*/
+    flex-wrap: wrap;/*permite que os elementos possam ficar um em baixo do outro*/
+    align-items: center;
+}
+
+.exemplos-c_texto{
+    flex: 6 1 160px; /* flex-grow, flex-shrink, flex-basis*/
+                    /*(6)vai ocupar um espaço 6 vezes maior que os demais elementos, (1) está permitindo que o item reduza o seu tamanho para caber do flex-container, (160px) seria o tamanho inicial desse elemento.  */
+}
+
+.exemplos-c_img{
+    flex: 1 1 350px;
+}
+
+.list-exemplos{
+    list-style: disc;
+    color: var(--crl-navyBlue);
+}
+
+.list-exemplos a{
+    color: var(--crl-navyBlue);
+    font-size: 1.5rem;
+    line-height: 21.82px;
+}
+
+.list-exemplos a:hover{
+    text-shadow: 2px 3px 2px #1919194f;
+}
+
+/*7.contato*/
+
+.contato{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contato-c_texto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+
+.paragrafo-contato_whats{
+    color: #191919;
+    display: flex;
+    align-items: baseline;  
+}
+
+.paragrafo-contato_email{
+    color: #191919;
+    display: flex;
+    align-items: baseline;  
+}
+
+.img-link_logo{
+    width: 20px;
+    height: 20px; 
+}
+
+.menu_logo_contato{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+
+/*8. footer*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer a {
+    color: var(--crl-navyBlue);
+}
+
+
+
+
