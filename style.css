@@ -84,6 +84,12 @@ img{
 .nav_link{
     padding: 20px ;
     color: var(--crl-white);
+    transition-timing-function: ease;
+}
+
+.nav_link:hover{
+    text-decoration: underline;
+
 }
 
 
