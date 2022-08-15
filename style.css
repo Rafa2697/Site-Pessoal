@@ -166,7 +166,7 @@ img{
         position: absolute;
         top: 0;
         top: -100%;
-        height: 50vh;
+        height: 60vh;
         margin: 0;
         background-color: #19191977;
         width: 100%;
@@ -276,12 +276,14 @@ img{
 .list-exemplos{
     list-style: disc;
     color: var(--crl-navyBlue);
+   
 }
 
 .list-exemplos a{
     color: var(--crl-navyBlue);
     font-size: 1.5rem;
     line-height: 21.82px;
+    
 }
 
 .list-exemplos a:hover{
@@ -321,7 +323,7 @@ img{
 }
 
 .menu_logo_contato{
-    margin: 10px;
+    margin: 0 auto;
     width: 80px;
     height: 80px;
 }
