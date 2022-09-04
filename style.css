@@ -60,6 +60,11 @@ img{
 
 .menu-bg{
     background-color: #191919;
+    
+    
+
+    
+
 }
 
 .menu{
@@ -67,6 +72,7 @@ img{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 
 }
 
@@ -108,10 +114,9 @@ img{
     display: none;
 }
 /*estilização do botão*/
-.hamburger:after {
+.hamburger:before {
     content: "";
     
-
     position: absolute;
     top: 30%;
     left: 15%;
@@ -122,9 +127,10 @@ img{
 
     background-color: #F5F5F5;
     transition: 1s ease;
+ 
 }
 
-.hamburger:before {
+.hamburger:after {
     content: "";
     
 
@@ -139,15 +145,15 @@ img{
     background-color: #F5F5F5;
 }
 
-#hamburger:checked ~ label .hamburger:after{
-    transform: rotate(225deg);
+#hamburger:checked ~ label .hamburger:before{
+    transform: rotate(-225deg);
     top: 45%;
     left: 15%;
     
 }
 
-#hamburger:checked ~ label .hamburger:before{
-    transform: rotate(-225deg);
+#hamburger:checked ~ label .hamburger:after{
+    transform: rotate(225deg);
     top: 45%;
     left: 15%;
     width: 70%;
@@ -163,16 +169,15 @@ img{
     }
 
     .nav{
-        position: absolute;
         top: 0;
-        top: -100%;
-        height: 60vh;
-        margin: 0;
+        position: absolute;
         background-color: #19191977;
         width: 100%;
         max-width: 150px;
         transition: 0.7s;
         margin-left: 50%;
+        height: 60vh;
+        
         
 
     }
@@ -192,7 +197,13 @@ img{
     }
 
     .nav.active {
-        top: 0;
+        
+        
+        top: -100%;
+       
+        
+        
+        
         
     }
 }
