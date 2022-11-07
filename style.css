@@ -236,6 +236,8 @@ img{
 
 .somos-c_texto{
     flex: 6 1 160px;
+    font-size: large;
+    text-align: justify;
 }
 
 .somos-c_img{
@@ -257,10 +259,13 @@ img{
 
 .servicos-c_texto{
     flex: 6 1 160px;
+    font-size: large;
+    text-align: justify;
 }
 
 .servicos-c_img{
     flex: 1 1 350px;
+    padding: 15px;
 }
 
 /*6.exemplos*/
@@ -278,6 +283,8 @@ img{
 .exemplos-c_texto{
     flex: 6 1 160px; /* flex-grow, flex-shrink, flex-basis*/
                     /*(6)vai ocupar um espaço 6 vezes maior que os demais elementos, (1) está permitindo que o item reduza o seu tamanho para caber do flex-container, (160px) seria o tamanho inicial desse elemento.  */
+    font-size: large;
+    text-align: justify;
 }
 
 .exemplos-c_img{
