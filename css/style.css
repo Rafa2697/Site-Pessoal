@@ -354,7 +354,31 @@ header{
 .contato{
     max-width: 960px;
     margin: 0 auto;
+    padding: 20px;
+    
 }
+
+.contato-c{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 600px;
+
+}
+
+.box-whats{
+
+}
+
+.botao{
+    width: 150px;
+    height: 150px;
+
+    
+}
+
+
 
 .contato-c_texto{
     display: flex;
