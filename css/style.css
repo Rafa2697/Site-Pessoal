@@ -370,8 +370,8 @@ header{
 
 
 .botao{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 
     
 }
@@ -384,8 +384,8 @@ header{
 
     }
     .botao{
-        margin: 10px 10px;
-       width: 90%;
+        margin: 30px 10px;
+       width: 80%;
        height: 100%;
     }
 }
