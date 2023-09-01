@@ -30,7 +30,12 @@ a, a:hover, a:active, a:link, a:visited{
 
 body{
     font-family: var(--ff-primary); 
+    -ms-overflow-style: none;  /*IE e Edge*/
+    scrollbar-width: none; /*firefox*/
     
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 
