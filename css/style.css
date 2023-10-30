@@ -84,6 +84,7 @@ header{
     position: fixed;
     width: 100%;
     margin-top: -20px;
+    z-index: 2;
     
     
    
@@ -124,6 +125,7 @@ header{
 
 .nav_link:hover{
     background-color: brown;
+    z-index: ;
 
 }
 
@@ -242,13 +244,7 @@ header{
     }
 
     .nav.active {
-        
-        
         top: -100%;
-       
-        
-        
-        
         
     }
 }
@@ -284,11 +280,28 @@ header{
     font-size: large;
     text-align: justify;
     letter-spacing: 1px;
+    
    
 }
 
+.c-indicador{
+    background-color: #A5292A;
+    height: 5px;
+    inset: 0;
+    transform-origin: left;
+    position: fixed;
+    animation: scroll 1ms ease-in-out;
+    animation-timeline: scroll();
+    z-index: 2;
+}
+
+
+
 .somos-c_img{
     flex: 1 1 350px;
+    
+   
+    
 }
 
 /*5.servicos*/
@@ -308,11 +321,71 @@ header{
     flex: 6 1 160px;
     font-size: large;
     text-align: justify;
+    
+}
+
+.servicos-c_texto > p{
+    animation: direito 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50% ;
 }
 
 .servicos-c_img{
     flex: 1 1 350px;
     padding: 15px;
+    
+    
+}
+.servicos-c_img img{
+    animation: esquerdo 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+}
+
+@keyframes esquerdo {
+    from{
+        opacity: 0;
+        translate: -100vw 0;
+
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+    
+}
+
+@keyframes direito {
+    from{
+        opacity: 0;
+        translate: 200vw 0;
+
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes scroll {
+    from{
+        scale: 0 1;
+    }
+    to{
+        scale: 1 1;
+    }
+    
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
 }
 
 /*6.exemplos*/
@@ -332,10 +405,20 @@ header{
                     /*(6)vai ocupar um espaço 6 vezes maior que os demais elementos, (1) está permitindo que o item reduza o seu tamanho para caber do flex-container, (160px) seria o tamanho inicial desse elemento.  */
     font-size: large;
     text-align: justify;
+    animation: esquerdo 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50% ;
+}
+
+.exemplos-c_texto > p a {
+    
 }
 
 .exemplos-c_img{
     flex: 1 1 350px;
+    animation: direito 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
 }
 
 .list-exemplos{
