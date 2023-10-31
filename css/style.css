@@ -255,7 +255,8 @@ header{
    align-items: center;
    justify-content: center;
    min-height: 100vh;
-   
+   animation: title-init 2s ease-in-out;
+
 }
 .intro{
     font-weight: bold;
@@ -264,8 +265,22 @@ header{
     margin: auto auto;
     padding: 25px 0;
     height: 50vh;
-}
+    
 
+}
+@keyframes title-init{
+    from{
+        opacity: 0;
+        filter: blur(15px);
+       
+
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+        
+    }
+}
 
 
 /*4.quem somos*/
