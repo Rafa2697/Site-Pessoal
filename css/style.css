@@ -125,7 +125,6 @@ header{
 
 .nav_link:hover{
     background-color: brown;
-    z-index: ;
 
 }
 
@@ -222,10 +221,6 @@ header{
         transition: 0.7s;
         margin-left: 50%;
         height: 70vh;
-    
-        
-        
-
     }
 
     .nav_list{
@@ -253,26 +248,40 @@ header{
 
 
 /*3.Header*/
-
+.titulo-inicio{
+    max-width: 960px;
+    margin: 100px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   
+}
 .intro{
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
-    margin: 0 auto;
+    margin: auto auto;
     padding: 25px 0;
+    height: 50vh;
 }
+
+
 
 /*4.quem somos*/
 
 .somos{
     max-width: 960px;
     margin: 100px auto;
+    min-height: 100vh;
 }
 
 .somos-c{
     display: flex;/*todos os elementos dentro do .somos-c vão ficar lado a lado com display:flex;*/
     flex-wrap: wrap;
     align-items: center;
+    place-items: center;
+    
 }
 
 .somos-c_texto{
@@ -280,7 +289,9 @@ header{
     font-size: large;
     text-align: justify;
     letter-spacing: 1px;
-    
+    animation: esquerdo 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
    
 }
 
@@ -299,7 +310,9 @@ header{
 
 .somos-c_img{
     flex: 1 1 350px;
-    
+    animation: direito 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50% ;
    
     
 }
@@ -345,6 +358,7 @@ header{
 @keyframes esquerdo {
     from{
         opacity: 0;
+        filter: blur(15px);
         translate: -100vw 0;
 
     }
@@ -357,6 +371,7 @@ header{
 
 @keyframes direito {
     from{
+        filter: blur(15px);
         opacity: 0;
         translate: 200vw 0;
 
