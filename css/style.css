@@ -35,7 +35,7 @@ body{
     overflow-x: hidden;
    
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar{ 
     display: none;
 }
 
@@ -98,6 +98,14 @@ header{
 
 .menu_logo {
     width: 100px;
+    animation: move-logo 2s infinite alternate ease-in-out;
+}
+
+@keyframes move-logo {
+    from{
+        transform: translate(-5%, -5%) rotate(-5deg);
+    }
+    
 }
 
 .nav_list{
@@ -294,7 +302,7 @@ header{
     animation: esquerdo 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0 cover 30%;
-   height: 100%;
+    height: 100%;
 }
 
 .c-indicador{
@@ -314,11 +322,23 @@ header{
     animation-timeline: view();
     animation-range: cover 0% cover 30% ;
     height: 100%;
+    animation: move-img 2s infinite alternate ease-in-out;
     
 }
 
+
+
 .somos-c_img img{
     width: 300px;
+}
+
+
+/* keyframs animation logo */
+@keyframes move-img {
+    from{
+        transform: translate(5%, 5%) rotate(5deg);
+    }
+    
 }
 
 /*5.servicos*/
@@ -363,17 +383,17 @@ header{
     animation-timeline: view();
     animation-range: cover 0 cover 30%;
     width: 300px;
-  
+    animation: move-img 2s infinite alternate ease-in-out;
 }
 
 @keyframes esquerdo {
-    from{
+    0%{
         opacity: 0;
         filter: blur(15px);
         translate: -100vw 0;
-
+        
     }
-    to{
+    100%{
         opacity: 1;
         translate: 0 0;
     }
@@ -444,6 +464,7 @@ header{
     animation-timeline: view();
     animation-range: cover 0 cover 20%;
     width: 300px;
+    animation: move-img 2s infinite alternate ease-in-out;
 }
 
 .list-exemplos{
@@ -466,7 +487,7 @@ header{
 /*7.contato*/
 
 .contato{
-   width: 80%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
     
