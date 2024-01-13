@@ -528,6 +528,11 @@ header{
         font-size: 5em;
         color: rgb(93, 5, 5);
     }
+    .exemplos{
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
 }
 /**
 .paragrafo-contato_whats{
