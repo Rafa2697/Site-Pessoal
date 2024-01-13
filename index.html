@@ -13,6 +13,7 @@
 	
         <link rel="stylesheet" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
 </head>
@@ -31,7 +32,7 @@
                 
                 <nav class="nav active">
                     <ul class="nav_list">
-                        <li><a href="#somos" class="nav_link">Quem Somos</a></li>
+                        <li><a class="nav_link" href="#somos">Quem Somos</a></li>
                         <li><a href="#servicos" class="nav_link">Serviços</a></li>
                         <li><a href="#exemplos" class="nav_link">Exemplos</a></li>
                         <li><a href="#contato" class="nav_link">Contato</a></li>
@@ -49,9 +50,9 @@
     </header>
     
     
-    <main>
-        <section class="titulo-inicio">
-            <h1 class="intro">Tenha um WebSite para sua empresa</h1>
+    <main data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <section class="titulo-inicio" id="titulo-inicio">
+            <h1 class="intro">WebSite para sua empresa</h1>
         </section>
         
         <section class="somos" id="somos">
@@ -117,7 +118,7 @@
 
         </section><!--exemplos-->
 
-
+        
         <section class="contato" id="contato">
             <h2 class="section_titulo">Contato</h2>
             <div class="contato-wraper">
@@ -157,18 +158,18 @@
                 
             </div><!--contato-wraper-->
             </div><!--.contato-c-->
-        </section><!--.contato-->
 
+            
+        </section><!--.contato-->
+        <div class="icone"><a href="#titulo-inicio"><i class="bi bi-arrow-up-circle-fill" id="icon"></i></a></div> 
+        
     </main>
     <footer>
         <div >
             <p style="display: inline-block; text-align: center;">&copy;Rafael Mattos</p>
             
         </div>
-
     </footer>
-
-    
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
