@@ -240,23 +240,51 @@ header{
 }
 /*3.Header*/
 .titulo-inicio{
-    max-width: 960px;
+    max-width: 90%;
     margin: 100px auto;
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
    min-height: 70vh;
-   animation: title-init 2s ease-in-out;
+   animation: title-init 1.5s ease-in-out;
 
 }
+
+/* animação intro */
 .intro{
     font-weight: bold;
     font-size: 5rem;
     text-align: center;
     margin: auto auto;
     padding: 25px 0;
-    height: 50vh;
+    
 }
+.logo{
+    width: 20%;
+}
+
+h1::after{
+    content: '|';
+   opacity: 1;
+   color: #A5292A;
+   animation: pisca 0.7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
 @media  (max-width: 425px) {
     .titulo-inicio{
         margin: 10px auto;
