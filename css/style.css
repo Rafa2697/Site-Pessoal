@@ -421,7 +421,7 @@ h1::after{
     animation-timeline: view();
     animation-range: cover 0 cover 30%;
     width: 300px;
-    animation: move-img 2s infinite alternate ease-in-out;
+    animation: move-img 2s infinite alternateease-in-out;
 }
 
 @keyframes esquerdo {
