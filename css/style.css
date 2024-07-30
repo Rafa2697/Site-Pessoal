@@ -519,7 +519,12 @@ h1::after{
 .list-exemplos{
     color: var(--crl-navyBlue);
     text-align: justify;
-    list-style: none;
+    list-style: circle;
+    
+}
+
+.list-exemplos li{
+    padding-top: 10px;
 }
 
 .list-exemplos a{
@@ -529,7 +534,7 @@ h1::after{
 }
 
 .list-exemplos a:hover{
-    text-shadow: 2px 3px 2px #1919194f;
+    color: #A5292A;
 }
 
 /*7.contato*/
