@@ -119,6 +119,16 @@ header{
     transition-timing-function: ease;
     transition: 0.7s;
 }
+.page{
+    padding: 15px;
+    color: var(--crl-white);
+    transition-timing-function: ease;
+    transition: 0.7s;
+}
+.page:hover{
+    background-color:  #00ffff;
+    color: black;
+}
 
 .nav_link:hover{
     background-color: brown;
@@ -637,33 +647,7 @@ h1::after{
         height: auto;
     }
 }
-/**
-.paragrafo-contato_whats{
-    color: #191919;
-    display: flex;
-    align-items: baseline;  
-}
 
-.paragrafo-contato_email{
-    color: #191919;
-    display: flex;
-    align-items: baseline;
-}
-
-.img-link_logo{
-    width: 20px;
-    height: 20px; 
-}
-
-
-.menu_logo_contato{
-    margin: 0 auto;
-    width: 80px;
-    height: 80px;
-}
-
-*/
-/*8. footer*/
 
 footer {
     position: relative;

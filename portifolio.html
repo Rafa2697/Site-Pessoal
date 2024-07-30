@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css//portifolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Mini Portfólio</title>
+</head>
+
+<body>
+
+    <main class="cartao">
+        <div class="icone"><a href="index.html"><i class="bi bi-arrow-left-circle-fill" id="icon"></i></a></div>
+        <div class="minhas-informacoes">
+            <img src="https://avatars.githubusercontent.com/u/93839545?v=4" alt="foto de perfil" />
+            <h1 class="nome">Rafael de Mattos</h1>
+            <h2 class="cargo">Desenvolvedor Frontend</h2>
+        </div>
+
+        <div class="conteudo">
+            <ul class="abas">
+                <li class="aba selecionado" id="sobre-mim">
+                    <img src="./imagens/sobre.gif" alt="ícone de sobre mim" />
+                </li>
+                <li class="aba" id="minhas-redes">
+                    <img src="./imagens/coracao.gif" alt="ícone de redes sociais" />
+                </li>
+            </ul>
+
+            <!-- div pai dos elmento sobre e  minhas redes-->
+            <div class="informacoes-abas">
+                <!-- elemento sobre -->
+                <div class="informacao selecionado" id="informacao-sobre-mim">
+                    <h3 class="sub-titulo">Sobre</h3>
+                    <!--div filha que fica do lado esquerdo-->
+                    <div class="descricao">
+                        <p>Olá! Meu nome é Rafael e estou cursando <span>Análise e Desenvolvimento de Sistemas</span>.</p> <br>
+
+                        <p>
+                             Tenho uma
+                            paixão genuína por tecnologia e estou sempre procurando aprender mais.
+
+                            Atualmente, trabalho como freelancer e também dou suporte em redes e tecnologias na Unisepe.
+                            Aqui estão algumas das habilidades que estou desenvolvendo: <br><br>
+
+                            <span>Desenvolvedor Web</span>: Estou aprendendo a criar e manter sites e aplicações web, sempre buscando
+                            me atualizar sobre as últimas tendências. <br><br>
+
+                            <span>Node JS:</span> Estou me familiarizando com o desenvolvimento de aplicações back-end usando
+                            Node.js, com foco em criar APIs RESTful. <br><br>
+
+                            <span>JavaScript:</span> Estou aprimorando minhas habilidades em JavaScript, buscando escrever códigos
+                            mais limpos e eficientes. <br><br>
+
+                            <span>MySQL/PostgreSQL:</span> Estou ganhando experiência com os bancos de dados MySQL e PostgreSQL junto com <span>Prisma ORM</span>,
+                            aprendendo a projetar e otimizar esquemas de banco de dados. <br><br>
+
+                            Estou sempre aberto a novas oportunidades e desafios. Se você acha que podemos colaborar em
+                            um projeto juntos, ficarei feliz em ouvir de você. Obrigado por visitar meu perfil!
+                        </p>
+                    </div>
+                </div>
+                <!--div filha que fica do lado direito-->
+                <div class="informacao" id="informacao-minhas-redes">
+                    <h3 class="sub-titulo">Projetos</h3>
+
+                    <ul class="redes-sociais">
+                        <li>
+                            <a href="https://github.com/Rafa2697/agenda-fpbe" target="_blank"
+                                class="projeto curriculo">Agenda de Aulas FPBE</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Rafa2697/cotaPreco" target="_blank"
+                                class=" projeto linkedin">Cota Preço</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Rafa2697/Media_Consumo" target="_blank" class="projeto github">Media e Consumo</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Rafa2697/ProjetoExtensao" target="_blank" class="projeto quiz">Quiz Educação Fiscal</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/portifolio.js"></script>
+</body>
+
+</html>
