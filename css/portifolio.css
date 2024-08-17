@@ -319,11 +319,26 @@ body {
     }
     .cartao{
         width: 100%;
-    }
-    .cartaoLeft{
-        width: 100%;
-    }
-    .wrapper_stacks{
+        height: 100vh;
 
     }
+    .informacoes-abas .informacao {
+        height: 100vh;
+    }
+    .descricao{
+        min-height: 300px;
+    }
+   .wrapper_stacks{
+    min-height: 300px;
+   }
+    
+
+    .cartaoLeft{
+        width: 100%;
+        height: 100vh;
+    }
+    .wrapper_card{
+        min-height: 90%;
+    }
+   
 }
