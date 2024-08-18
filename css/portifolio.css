@@ -45,19 +45,21 @@ body {
     align-items: center;
     /*precisa ter espaço para centralizar verticalmente*/
     min-height: 100vh;
-    padding: 0 30px;
+
 
 }
 
 .cartao {
     background-color: #070b12;
-    width: 600px;
+    width: 50%;
     border: 2px solid #A5292A;
     border-radius: 10px;
     overflow: hidden;
     transition: .5s;
+    min-height: 90vh;
 }
-.cartao:hover{
+
+.cartao:hover {
     border: 2px solid #02d08f;
 }
 
@@ -128,9 +130,8 @@ body {
 }
 
 .informacoes-abas .informacao {
-    min-height: 260px;
+    min-height: 410px;
     padding: 15px;
-
     display: none;
 }
 
@@ -139,14 +140,14 @@ body {
 }
 
 .informacoes-abas .sub-titulo {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 25px;
     text-align: center;
 }
 
 .descricao {
-    font-size: 20px;
-    max-height: 180px;
+    font-size: 22px;
+    max-height: 310px;
     overflow-y: auto;
     padding-right: 15px;
 }
@@ -155,12 +156,13 @@ body {
     color: #A5292A;
 }
 
-.wrapper_stacks{
+.wrapper_stacks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-height: 180px;
-    overflow-y: auto;
+    gap: 15px;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 
@@ -180,24 +182,29 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    
+    gap: 15px;
+    padding: 0 10px;
+    height: 100%;
 }
-.cartaoLeft {
+
+.cartaoleft {
     background-color: #070b12;
-    width: 600px;
+    width: 50%;
+    min-height: 90vh;
     border: 2px solid #A5292A;
     border-radius: 10px;
     overflow: hidden;
     transition: .5s ease-in-out;
 }
-.cartaoLeft:hover{
+
+.cartaoleft:hover {
     border: 2px solid #1d87bd;
 }
 
 .wrapper_card {
-    max-height: 500px;
+    max-height: 650px;
     overflow-y: auto;
 }
 
@@ -222,10 +229,11 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    a{
+    a {
         color: white;
     }
-    a:hover{
+
+    a:hover {
         color: cornflowerblue;
     }
 }
@@ -234,10 +242,12 @@ body {
 .card-title {
     text-align: center;
 }
-.card-text{
+
+.card-text {
     margin: 0 auto;
     text-align: center;
 }
+
 .row {
     display: flex;
     width: 100%;
@@ -265,39 +275,45 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-.sitegabriel{
+
+.sitegabriel {
     background-image: url('/imagens/sitegabriel.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.sitemarcenariaype{
+
+.sitemarcenariaype {
     background-image: url('/imagens/siteypeart.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.agendamentoFPBE{
+
+.agendamentoFPBE {
     background-image: url('/imagens/agendamentosFPBE.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.mediaConsumo{
+
+.mediaConsumo {
     background-image: url('/imagens/mediaConsumo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: khaki;
 }
-.cotapreco{
+
+.cotapreco {
     background-image: url('/imagens/cotaPreco.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: cornflowerblue;
 }
-.quiz{
+
+.quiz {
     background-image: url('/imagens/quizeducacaofiscal.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -310,35 +326,43 @@ body {
 /* mobile */
 
 @media screen and (max-width:768px) {
-    body{
+    body {
         padding: 0;
     }
-    .container{
+
+    .container {
         flex-direction: column-reverse;
         gap: 10px;
     }
-    .cartao{
+
+    .cartao {
         width: 100%;
         height: 100vh;
 
     }
+
     .informacoes-abas .informacao {
         height: 100vh;
     }
-    .descricao{
-        min-height: 300px;
-    }
-   .wrapper_stacks{
-    min-height: 300px;
-   }
-    
 
-    .cartaoLeft{
+    .descricao {
+        max-height: 60%;
+        padding-bottom: 10%;
+    }
+
+    .wrapper_stacks {
+        max-height: 60%;
+        padding-bottom: 20%;
+    }
+
+
+    .cartaoleft {
         width: 100%;
         height: 100vh;
     }
-    .wrapper_card{
+
+    .wrapper_card {
         min-height: 90%;
     }
-   
+
 }
