@@ -304,6 +304,13 @@ body {
     background-position: center;
     background-color: khaki;
 }
+.contatosunisepe {
+    background-image: url('/imagens/contatos unisepe.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightseagreen;
+}
 
 .cotapreco {
     background-image: url('/imagens/cotaPreco.png');
