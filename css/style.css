@@ -338,7 +338,7 @@ h1::after{
 .somos{
     width: 80%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
 }
 
 .somos-c{
@@ -346,6 +346,7 @@ h1::after{
    
     align-items: center;
     place-items: center;
+    
     
 }
 
