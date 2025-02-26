@@ -290,6 +290,12 @@ body {
     background-position: center;
 }
 
+.cantinaFasupi {
+    background-image: url('/imagens/cantinaFasupi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .agendamentoFPBE {
     background-image: url('/imagens/agendamentosFPBE.png');
     background-size: cover;
