@@ -268,6 +268,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+.takeshyimg {
+    background-image: url('/imagens/takeshyadvogados.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .cell1001 {
     background-image: url('/imagens/1001cell.png');
