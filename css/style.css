@@ -229,7 +229,8 @@ header {
         transition: var(--transition);
     }
 
-    .nav.active { transform: translateX(0); }
+    /* abrir menu via checkbox CSS puro */
+    #hamburger:checked ~ .nav { transform: translateX(0); }
 
     .nav_list { flex-direction: column; gap: 4px; padding: 0 12px; }
 

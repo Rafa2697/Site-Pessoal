@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== CLOSE MOBILE NAV ON LINK CLICK =====
-document.querySelectorAll('.nav_link').forEach(link => {
+document.querySelectorAll('.nav_link, .page').forEach(link => {
     link.addEventListener('click', () => {
         const hamburger = document.getElementById('hamburger');
         if (hamburger) hamburger.checked = false;
