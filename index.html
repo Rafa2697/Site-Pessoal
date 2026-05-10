@@ -26,9 +26,29 @@
     <meta name="twitter:description"
         content="RafaelDev: Desenvolvedor de sites institucionais, e-commerce e sistemas web. Atendimento personalizado em Peruíbe, SP. Transforme sua ideia digital!">
 
+    <link rel="canonical" href="https://rafaeldev.com/">
+
     <link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "Saiba Mais" };
+        (function (d, t) {
+            var BASE_URL = "https://chat.toolster.com.br";
+            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            g.src = BASE_URL + "/packs/js/sdk.js";
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function () {
+                window.chatwootSDK.run({
+                    websiteToken: 'x7cVVLXy6c84iMbwoG9KHaVN',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document, "script");
+    </script>
+
+
 </head>
 
 <body>
@@ -94,7 +114,8 @@
                     <p>Seja desenvolvendo sites funcionais e atraentes ou landing pages otimizadas para alta conversão,
                         meu trabalho visa atender às necessidades específicas de cada cliente — garantindo que suas
                         plataformas digitais não apenas atraiam visitantes, mas também os transformem em
-                        <strong>clientes fiéis</strong>.</p>
+                        <strong>clientes fiéis</strong>.
+                    </p>
                     <ul class="skills-list" aria-label="Tecnologias">
                         <li>JavaScript</li>
                         <li>TypeScript</li>
@@ -110,7 +131,8 @@
                 </div>
 
                 <div class="somos-c_img reveal-right">
-                    <img src="imagens/pessoaCodando.svg" alt="Desenvolvedor codando">
+                    <img src="imagens/pessoaCodando.svg"
+                        alt="Ilustração de um desenvolvedor web codando em frente ao computador">
                 </div>
             </div>
         </section>
@@ -239,36 +261,43 @@
     <script src="js/script.js"></script>
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "RafaelDev — Sites e Sistemas Personalizados",
-      "description": "Desenvolvedor de sites institucionais, portfólios, blogs, e-commerces e sistemas web com design responsivo.",
-      "url": "https://rafaeldev.com/",
-      "telephone": "+5513981317461",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Peruíbe",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://rafaeldev.com/#organization",
+        "name": "RafaelDev — Sites e Sistemas Personalizados",
+        "description": "Desenvolvedor de sites institucionais, portfólios, blogs, e-commerces e sistemas web com design responsivo em Peruíbe, SP.",
+        "url": "https://rafaeldev.com/",
+        "image": "https://rafaeldev.com/imagens/logoPrincipal.svg",
+        "telephone": "+5513981317461",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Peruíbe",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "founder": {
+          "@id": "https://rafaeldev.com/#person"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/rafael-mattos-7a257b185",
+          "https://github.com/Rafa2697"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://rafaeldev.com/#person",
+        "name": "Rafael Mattos",
+        "jobTitle": "Desenvolvedor Web e Analista de Sistemas",
+        "url": "https://rafaeldev.com/portifolio.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/rafael-mattos-7a257b185",
+          "https://github.com/Rafa2697"
+        ]
       }
-    }
-    </script>
-    <script>
-        window.chatwootSettings = { "position": "right", "type": "standard", "launcherTitle": "" };
-        (function (d, t) {
-            var BASE_URL = "https://chat.toolster.com.br";
-            var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            g.src = BASE_URL + "/packs/js/sdk.js";
-            g.async = true;
-            s.parentNode.insertBefore(g, s);
-            g.onload = function () {
-                window.chatwootSDK.run({
-                    websiteToken: 'x7cVVLXy6c84iMbwoG9KHaVN',
-                    baseUrl: BASE_URL
-                })
-            }
-        })(document, "script");
+    ]
     </script>
 
 
