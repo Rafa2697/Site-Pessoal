@@ -83,3 +83,19 @@ const revealEls = document.querySelectorAll(
     '.reveal-left, .reveal-right, .reveal-up, .service-card, .project-link-card, .botao'
 );
 revealEls.forEach(el => observer.observe(el));
+
+
+  window.chatwootSettings = {"position":"right","type":"expanded_bubble","launcherTitle":"Saiba Mais"};
+  (function(d,t) {
+    var BASE_URL="https://chat.toolster.com.br";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'x7cVVLXy6c84iMbwoG9KHaVN',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
